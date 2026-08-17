@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Gallery | CodeAlpha</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Modern Image Gallery</h1>
+
+        <!-- Dark Mode -->
+
+        <button id="themeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+    </header>
+
+    <!-- Search -->
+
+    <div class="search-box">
+
+        <input type="text" id="search" placeholder="Search Category...">
+
+    </div>
+
+    <!-- Filter Buttons -->
+
+    <div class="buttons">
+
+        <button class="active" data-filter="all">All</button>
+
+        <button data-filter="nature">Nature</button>
+
+        <button data-filter="city">City</button>
+
+        <button data-filter="animals">Animals</button>
+
+    </div>
+
+    <!-- Gallery -->
+
+    <section class="gallery">
+
+        <div class="image nature">
+            <img src="./image/images 2.jpg" alt="Nature">
+            <div class="overlay">
+                <button class="like">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <a href="" download>
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="image city">
+            <img src="./image/city1.jpg" alt="City">
+            <div class="overlay">
+                <button class="like">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <a href="images/img2.jpg" download>
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="image animals">
+            <img src="./image/dog.avif" alt="Animals">
+            <div class="overlay">
+                <button class="like">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <a href="images/img3.jpg" download>
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="image nature">
+            <img src="./image/imge 3.avif" alt="Nature">
+            <div class="overlay">
+                <button class="like">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <a href="./image/images 2.jpg" download>
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="image city">
+            <img src="./image/city2.jpg" alt="City">
+            <div class="overlay">
+                <button class="like">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <a href="images/img5.jpg" download>
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="image animals">
+            <img src="./image/rabbit.jpg" alt="Animals">
+            <div class="overlay">
+                <button class="like">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <a href="images/img6.jpg" download>
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="image nature">
+            <img src="./image/img4.avif " alt="Nature">
+            <div class="overlay">
+                <button class="like">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <a href="image/img4.avif" download>
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="image city">
+            <img src="./image/Masjid-Lahore.jpg" alt="City">
+            <div class="overlay">
+                <button class="like">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <a href="images/img8.jpg" download>
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="image animals">
+            <img src="./image/cat.jpg" alt="Animals">
+            <div class="overlay">
+                <button class="like">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <a href="images/img9.jpg" download>
+                    <button class="download">
+                        <i class="fa-solid fa-download"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Lightbox -->
+
+    <div class="lightbox">
+
+        <span class="close">&times;</span>
+
+        <i class="fa-solid fa-angle-left prev"></i>
+
+        <img class="lightbox-img" src="" alt="">
+
+        <i class="fa-solid fa-angle-right next"></i>
+
+        <div class="counter">1 / 9</div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
